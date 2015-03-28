@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Link Recognition test</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="/src/jquery.linkrecognition.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".content").LinkRecognition(
+                {
+                    target: "_blank",
+                    cssClass: "external-link"
+                }
+            );
+        })
+
+    </script>
+</head>
+<body>
+    <div class="content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur http://google.com adipiscing elit.
+            Vestibulum eleifend ut eros at ullamcorper http://yahoo.com. Nullam dictum cursus lectus et eleifend http://www.facebook.com.
+        </p>
+        <p>
+            Duis nulla elit, cursus vitae libero eu, porta http://wikipedia.org vehicula orci.
+            Donec vitae velit mi. Duis risus eros, http://www.jquery.com elementum et semper eu, tempus eu mi. Suspendisse sed viverra mi, quis aliquet nulla. Pellentesque porta turpis sit amet purus faucibus, ac ornare lacus congue. Vestibulum interdum eget neque nec interdum. Aenean interdum enim neque, id gravida magna vehicula nec. Proin ut vestibulum diam. Nullam luctus lacinia pretium. Curabitur tincidunt ut mi eget auctor. Aenean luctus ornare tincidunt. Sed ut tincidunt lorem. Maecenas ut est vulputate, pharetra tortor id, sagittis tortor. Ut vitae interdum tortor. Praesent in tortor eu mi tincidunt efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+    </div>
+</body>
+</html>
